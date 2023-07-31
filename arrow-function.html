@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // const sayHello = (name) => {
+        //     console.info(`Hello ${name}`)
+        // }
+
+        // const sayHello = (name) => console.info(`Hello ${name}`)
+        const sayHello = name => console.info(`Hello ${name}`)
+
+        sayHello("Pika")
+
+        // const number = (first, second) => {
+        //     return first + second
+        // }
+
+        const number = (first, second) => first + second
+
+        console.info(number(100, 100))
+
+        function giveMeName(callback) {
+            callback("Pikaruo")
+        }
+
+        // anonymouse function
+        // giveMeName(function (name) {
+        //     console.info(`Hello ${name}`)
+        // })
+
+        giveMeName((name) => console.info(`Hello ${name}`))
+
+    </script>
+</body>
+
+</html>

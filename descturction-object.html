@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const person = {
+            firstName: "Pika",
+            lastName: "Pina",
+            address: {
+                street: "Jalan Sini",
+                city: "Here",
+                // Country: "Indonesia"
+            },
+            hobi: "Game",
+            Channel: "Pikaruo"
+        }
+
+        const { firstName, lastName: namaAkhir, address: { street, city, Country = "Hello" }, ...others } = person
+        console.info(firstName)
+        console.info(namaAkhir)
+        console.info(city)
+        console.info(Country)
+        console.info(others)
+
+    </script>
+</body>
+
+</html>

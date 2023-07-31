@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.info(this)
+
+        const person = {
+            name: 'Pina',
+            sayHello: function (name) {
+                console.info(this)
+            }
+        }
+
+        person.sayHello("Pika")
+
+    </script>
+</body>
+
+</html>

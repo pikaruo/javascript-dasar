@@ -9,9 +9,19 @@
 
 <body>
     <script>
-        document.writeln("Tipe Data String!")
-        document.writeln("</br>")
-        document.writeln("Nama : " + "Pikaruo")
+        function outer() {
+
+            function iner() {
+                console.info("iner")
+            }
+
+            iner()
+            iner()
+
+        }
+
+        outer()
+
     </script>
 </body>
 

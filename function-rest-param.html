@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Sum(name, address, ...data) {
+            let total = 0
+            for (const item of data) {
+                total += item
+            }
+
+            console.info(`Total ${name} is ${total}`)
+        }
+
+        Sum("Pika", "Here", 5, 5, 5, 5)
+        Sum("Pina", "Here", 10, 5, 5, 5)
+
+        let array = [1, 2, 2]
+        Sum("A", "B", ...array)
+
+        function OldSum() {
+            let total = 0
+            for (const item of arguments) {
+                total += item
+            }
+            console.info(total)
+        }
+
+        OldSum(12, 24, 5, 5)
+
+    </script>
+</body>
+
+</html>

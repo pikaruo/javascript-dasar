@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            firstName: "Pina",
+            lastName: "Auswahlen",
+            address: "Here"
+        }
+
+        for (const property in person) {
+            console.info(`${property} : ${person[property]}`)
+        }
+
+        const num = [1, 2, 3]
+        for (const index in num) {
+            console.info(`${index} : ${num[index]}`)
+        }
+
+    </script>
+</body>
+
+</html>

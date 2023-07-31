@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // global scope
+        let counter = 0
+
+        function hitMe() {
+            counter++
+        }
+
+        hitMe()
+        hitMe()
+
+        console.info(counter)
+
+        function first() {
+            // local scope
+            firstVar = "First"
+            console.info(firstVar)
+
+            function inFirst() {
+                console.info(`Ini local dari ${firstVar}`)
+            }
+
+            inFirst()
+
+        }
+
+        function second() {
+            // local scope
+            secondVar = "Second"
+            console.info(secondVar)
+            counter++
+        }
+
+        first()
+        second()
+
+    </script>
+</body>
+
+</html>

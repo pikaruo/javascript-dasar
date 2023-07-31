@@ -9,9 +9,15 @@
 
 <body>
     <script>
-        document.writeln("Tipe Data String!")
-        document.writeln("</br>")
-        document.writeln("Nama : " + "Pikaruo")
+        const data = {
+            angka: 1,
+            jumlah: 2,
+            nama: undefined
+        }
+
+        const result = "nama" in data
+        console.info(result);
+
     </script>
 </body>
 

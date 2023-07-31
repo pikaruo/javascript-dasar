@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const orang = {}
+
+        // menambah atau mengubah
+        orang["nama"] = "pikaruo"
+        orang["umur"] = 24
+
+        delete orang["umur"]
+
+        console.table(orang)
+
+        const person = {
+            nama: "Pina",
+            alamat: "heren",
+            umur: 33
+        }
+
+        console.table(person)
+
+        console.info(`nama ${person.nama}`)
+
+    </script>
+</body>
+
+</html>
